@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayan Ali | Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="logo">SA<span class="logo-dot">.</span></a>
+                
+                <div class="nav-links" id="navLinks">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <button class="nav-toggle" id="navToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content" data-anim="fade-up">
+                <h3 class="hero-greeting">Hello, I'm</h3>
+                <h1 class="hero-title">Shayan <span class="highlight">Ali</span></h1>
+                <h2 class="hero-subtitle">Frontend Web Developer</h2>
+                <p class="hero-description">I craft responsive, accessible, and pixel-perfect digital experiences with modern technologies.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/file/d/1ithuV8ZhmfoMrV9DztvruObqhQOXkUu9/view?usp=sharing" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i> Contact Me
+                    </a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Shayan787" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ShayanAliQazi/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="hero-image" data-anim="fade-left">
+                <div class="image-container">
+                    <img src="My Pic.png" alt="Shayan Ali" class="profile-img">
+                    <div class="image-bg"></div>
+                    <div class="floating-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <a href="#about" class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title" data-anim="fade-up">About <span class="highlight">Me</span></h2>
+            <p class="section-subtitle" data-anim="fade-up">Get to know me better</p>
+            
+            <div class="about-content">
+                <div class="about-image" data-anim="fade-right">
+                    <img src="My Pic.png" alt="Shayan Ali">
+                </div>
+                
+                <div class="about-text" data-anim="fade-left">
+                    <h3>Frontend Developer & UI/UX Enthusiast</h3>
+                    <p>I'm a passionate Frontend Web Developer specializing in building responsive, accessible, and high-performance web interfaces. With expertise in modern HTML, CSS, and JavaScript, I transform designs into interactive digital experiences.</p>
+                    
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="info-label">Name:</span>
+                            <span class="info-value">Shayan Ali</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">shayanaliqazi@outlook.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Pakistan</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Availability:</span>
+                            <span class="info-value highlight">Open to Work</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="stat">
+                            <h4>1+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Client Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-anim="fade-up">My <span class="highlight">Skills</span></h2>
+            <p class="section-subtitle" data-anim="fade-up">Technologies I work with</p>
+            
+            <div class="skills-grid">
+                <div class="skill-card" data-anim="fade-up">
+                    <div class="skill-icon">
+                        <img src="html.png" alt="HTML">
+                    </div>
+                    <h3>HTML</h3>
+                    <p>Semantic markup, accessibility, modern HTML features</p>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 95%"></div>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-anim="fade-up">
+                    <div class="skill-icon">
+                        <img src="css-removebg-preview.png" alt="CSS">
+                    </div>
+                    <h3>CSS </h3>
+                    <p>Flexbox, Grid, animations, responsive design</p>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-anim="fade-up">
+                    <div class="skill-icon">
+                        <img src="javalogo-removebg-preview.png" alt="JavaScript">
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>ES6+, DOM manipulation, APIs</p>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 85%"></div>
+                        </div>
+                        <span>85%</span>
+                    </div>
+                </div>
+                
+                
+                <div class="skill-card" data-anim="fade-up">
+                    <div class="skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, collaboration, deployment</p>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 90%"></div>
+                        </div>
+                        <span>90%</span>
+                    </div>
+                </div>
+                
+                <div class="skill-card" data-anim="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile-first, cross-browser compatibility</p>
+                    <div class="skill-level">
+                        <div class="level-bar">
+                            <div class="level-fill" style="width: 95%"></div>
+                        </div>
+                        <span>95%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-anim="fade-up">Featured <span class="highlight">Projects</span></h2>
+            <p class="section-subtitle" data-anim="fade-up">A showcase of my recent work</p>
+            
+            <div class="projects-grid">
+                <div class="project-card" data-anim="fade-up">
+                    <div class="project-image">
+                        <img src="Perfume Website Header.png" alt="SA Perfumes">
+                        <div class="project-overlay">
+                            <a href="https://shayan787.github.io/sa-perfumes/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SA Perfumes</h3>
+                        <p>A modern e-commerce website for perfume sales with product filtering, and responsive design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-anim="fade-up">
+                    <div class="project-image">
+                        <img src="Digitalgpimatiari.png" alt="Simple Calculator">
+                        <div class="project-overlay">
+                            <a href="https://shayan787.github.io/DIGITALGPIMATIARI/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Digital GPI Matiari</h3>
+                        <p>A clean, functional Learning Platform Created Especially For Students of GPI Matiari, error handling, and modern UI design.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-anim="fade-up">
+                    <div class="project-image">
+                        <img src="Car Rental Website Preview.png" alt="Shayan Rentals">
+                        <div class="project-overlay">
+                            <a href="https://shayan787.github.io/Drive-Hub/" class="project-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Drive Hub</h3>
+                        <p>A car rental service website with vehicle catalog, booking system, and customer dashboard.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-anim="fade-up">Client <span class="highlight">Testimonials</span></h2>
+            <p class="section-subtitle" data-anim="fade-up">What people say about my work</p>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card" data-anim="fade-up">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>Shayan is a skilled frontend developer! He created a clean, responsive website for my business and delivered it exactly on time. His attention to detail is exceptional.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Daniyal Khaskheli</h4>
+                            <p>Business Owner</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-anim="fade-up">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>Very professional and talented. I was impressed with the UI animations and responsiveness. He communicated effectively throughout the project.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Muhammad Khan Khoso</h4>
+                            <p>Project Manager</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card" data-anim="fade-up">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p>Great communication and even better results! The website exceeded my expectations. I'll definitely work with him again for future projects.</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Kashif Khoso</h4>
+                            <p>Marketing Director</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-anim="fade-up">Get In <span class="highlight">Touch</span></h2>
+            <p class="section-subtitle" data-anim="fade-up">Let's work together</p>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-anim="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>shayanaliqazi@outlook.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Location</h3>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Portfolio</h3>
+                            <p>shayanali.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Connect with me</h3>
+                        <div class="social-icons">
+                            <a href="https://github.com/Shayan787" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ShayanAliQazi/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-anim="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Shayan Ali</a>
+                <p class="footer-text">Frontend Web Developer crafting digital experiences</p>
+                
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                
+                <p class="copyright">© <span id="currentYear"></span> Shayan Ali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
