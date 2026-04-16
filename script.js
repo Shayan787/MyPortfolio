@@ -102,43 +102,35 @@ function updateActiveNavLink() {
     });
 }
 
-// Contact form submission
+// Contact form submission (FIXED - does NOT block submission)
 const contactForm = document.getElementById('contactForm');
+
 if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        // Get form values
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault(); // prevent default page reload
+
         const formData = new FormData(contactForm);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const subject = formData.get('subject');
-        const message = formData.get('message');
-        
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
-        alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
-        contactForm.reset();
-        
-        // In a real application, you would use fetch() to send the data to your backend
-        /*
-        fetch('/send-message', {
-            method: 'POST',
-            body: JSON.stringify({ name, email, subject, message }),
-            headers: { 'Content-Type': 'application/json' }
-        })
-        .then(response => response.json())
-        .then(data => {
-            alert('Message sent successfully!');
-            contactForm.reset();
-        })
-        .catch(error => {
-            alert('There was an error sending your message. Please try again.');
-        });
-        */
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData
+            });
+
+            if (response.ok) {
+                const name = formData.get('name');
+
+                alert(`Thank you, ${name}! Your message has been sent. I'll get back to you soon.`);
+                contactForm.reset();
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+
+        } catch (error) {
+            alert("Network error. Please check your internet connection and try again.");
+        }
     });
 }
-
 // Add typing effect for hero description
 function typeWriterEffect() {
     const text = "I craft responsive, accessible, and pixel-perfect digital experiences with modern technologies.";
